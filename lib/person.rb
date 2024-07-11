@@ -31,6 +31,23 @@ class Person
                  end
   end
 
+  def clean?
+    self.hygiene > 7
+  end
+
+  def happy?
+    self.happiness > 7
+  end
+
+  def get_paid(amount)
+    self.bank_account += amount
+    "all about the benjamins"
+  end
+
+
+
 
 end
 
+bob = Person.new("Bob")
+# ex
