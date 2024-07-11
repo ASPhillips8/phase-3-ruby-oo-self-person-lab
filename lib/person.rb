@@ -44,6 +44,23 @@ class Person
     "all about the benjamins"
   end
 
+  def take_bath
+    self.hygiene += 4
+    "♪ Rub-a-dub just relaxing in the tub ♫"
+  end
+
+  def work_out
+    self.hygiene -= 3
+    self.happiness += 2
+    "♪ another one bites the dust ♫"
+  end
+
+  def call_friend(friend)
+    friend.happiness += 3
+    self.happiness += 3
+    "Hi #{friend.name}! It's #{self.name}. How are you?"
+  end
+
 
 
 
