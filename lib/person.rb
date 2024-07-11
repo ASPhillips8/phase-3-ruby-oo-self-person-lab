@@ -1,5 +1,3 @@
-require "pry"
-
 class Person
   attr_accessor :bank_account
   attr_reader :name, :happiness, :hygiene
@@ -74,10 +72,4 @@ class Person
       "blah blah blah blah blah"
     end
   end
-
-
-
 end
-
-bob = Person.new("Bob")
-# ex
