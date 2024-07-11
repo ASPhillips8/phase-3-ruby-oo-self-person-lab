@@ -21,6 +21,16 @@ class Person
                  end
   end
 
+  def hygiene=(value)
+    @hygiene = if value < 0
+                   0
+                 elsif value > 10
+                   10
+                 else
+                   value
+                 end
+  end
+
 
 end
 
